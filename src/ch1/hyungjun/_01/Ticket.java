@@ -1,4 +1,4 @@
-package ch1.hyungjun;
+package ch1.hyungjun._01;
 
 public class Ticket {
     private Long fee;    //long이 아니라 Long 인 이유 알기!!!!

@@ -1,7 +1,10 @@
-package ch1.hyungjun;
+package ch1.hyungjun._01;
+
+import ch1.hyungjun._01.Audience;
+import ch1.hyungjun._01.TicketOffice;
 
 public class TicketSeller {
-    private TicketOffice ticketOffice;  // ticket office의 가시성이 private 이고 접근 가능한 public 메서드
+    public TicketOffice ticketOffice;  // ticket office의 가시성이 private 이고 접근 가능한 public 메서드
     // 가 더이상 없어서 ticketOffice에 대한 접근은 이제 TicketSeller만 가능하다.
     // 여기서 접근 가능한 public method의 예시는???
 
@@ -24,7 +27,7 @@ public class TicketSeller {
 //            audience.getBag().setTicket(ticket);
 //        }
 
-        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+        ticketOffice.sellTicketTo(audience);
     }
 }
 

@@ -1,4 +1,4 @@
-package ch1.hyungjun;
+package ch1.hyungjun._01;
 
 public class Audience {   // 관람객
     private Bag bag;
@@ -10,16 +10,8 @@ public class Audience {   // 관람객
 //  public Bag getBag() {  // 이 Audience 클래스 안의 getBag() 함수를 이용해서 관람객의 가방에 접근한다고 받아들이면 되나요???
 //      return bag;
 //  }
-
     public Long buy(Ticket ticket) {
-        if (bag.hasInvitation()) {
-            bag.setTicket(ticket);
-            return 0L;
-        } else {
-            bag.setTicket(ticket);
-            bag.minusAmount(ticket.getFee());
-            return ticket.getFee();
-        }
+        return bag.hold(ticket);
     }
 }
 
