@@ -9,9 +9,9 @@ import java.util.function.Predicate;
 public class Audience {
     private Bag bag; // 관람객의 소지품을 보관하고 있는 Bag 타입을 인스턴스 변수로 구현
 
-    public Audience(Bag bag) {
-        this.bag = bag;
-    }
+//    public Audience(Bag bag) {
+//        this.bag = bag;
+//    }
 
 //    public Bag getBag() { // 다른 클래스에서 변경하지 못하게 코드를 제거한다.
 //        return bag;

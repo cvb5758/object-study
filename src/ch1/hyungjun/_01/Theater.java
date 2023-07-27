@@ -1,4 +1,4 @@
-package ch1.hyungjun;
+package ch1.hyungjun._01;
 
 public class Theater {
 
